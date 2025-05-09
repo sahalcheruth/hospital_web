@@ -1,0 +1,382 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+home
+{% endblock %}
+
+{% block content%}
+
+{% load static %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="header-two">
+      <p style="font-size: 14PX; letter-spacing: 2PX; color: gray;">TOTAL HEALTH CARE SOLUTION</p>
+      <h1 style="font-size: 60px; font-family: 'Times New Roman', Times, serif;"><strong>Y</strong>our Most Trusted <br>Health Partner</h1>
+      <p style="color: cadetblue;font-size: 10px;">A hospital is a place where doctors and nurses work tirelessly to save lives<br>
+         but it's the human connection that makes all the difference</p>
+      <br>
+      
+      </div>
+      <div class="appoi">
+        <a href="{% url 'booking'%}">
+          <button class="btn make-appointment-btn" type="button">
+            MAKE &nbsp; APPOINTMENT &nbsp;>
+          </button>
+        </a>
+      </div>
+
+    <div class="emer" style="background-color:white;position: absolute;top: 85%;left: 72%;
+        transform: translateX(-50%);z-index: 1;padding: 20px; padding-right: 140px;border-radius: 4%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5G_lXK5cROdWBjbkK6h3rghuHW1pcfFwDfg&s" width=
+         "25px"><p style="color: gray;font-family: 'Times New Roman', Times, serif;"><br>Emegency Cases<br>
+          <strong style="color: blue;">0703-413-6933</strong></p>
+      </div>
+
+
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static '/images/slider-bg-1.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static '/images/22.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/car3.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <div class="three">
+    <div class="elementor-widget-wrap elementor-element-populated">
+        <p style="font-weight: 400; color: blue;">@ City Hospital</p>
+        <div class="ani">
+        <h1 style="letter-spacing: .2px; font-family:'Times New Roman', Times, serif; color: rgb(9, 86, 59);font-weight: 1000;">Best Medical And
+        Health Care<span> Center
+        in Malappuram</span>
+        </h1></div>
+        <p style="font-size: 12px; color: gray;">founded in 2025 with an aim to promote wellness and provide healthcare for
+            all with the best kinds of services and is successfully achieving milstones ever since.City hospitals often
+             play a critical role in the community, offering both outpatient and inpatient services. In addition, they may be
+              affiliated with universities or medical schools, providing education and training to future healthcare professionals. 
+              Depending on the size and location,
+             they can range from smaller district hospitals to large, state-of-the-art institutions.A city hospital is
+              typically a healthcare facility located within an urban area, providing a wide range of medical services
+               to residents of the city and surrounding regions. These hospitals often serve as major healthcare centers,
+                offering emergency care, specialized treatments, surgeries, maternity services, and diagnostic tests.
+                 They are usually well-equipped with modern technology and staffed by a diverse team of doctors, nurses,
+                  and medical specialists to cater to various health needs.A hospital is a healthcare facility that provides 
+                  treatment, care, and medical services to individuals who are ill, injured, or in need of medical attention. 
+                  It is equipped with various medical departments and specialized staff, including doctors, nurses, and support 
+                  staff, to ensure patients receive the necessary care. Hospitals typically offer emergency services, surgical
+                   procedures, diagnostic tests, and inpatient or outpatient care. They play a vital role in public 
+                  health by treating conditions, preventing diseases, and promoting wellness.specialized treatments, 
+                  surgeries, maternity services, and diagnostic tests.
+                  They are usually well-equipped with modern technology and staffed by a diverse team of doctors, nurses,
+                   and medical specialists to cater to various health needs.A hospital is a healthcare facility that provides 
+                   treatment, care, and medical services to individuals who are ill, injured, or in need of medical attention. 
+                   It is equipped with various medical departments and specialized staff, including doctors, nurses, and support 
+                   staff, to ensure patients receive the necessary care. Hospitals typically offer emergency services, surgical
+                    procedures, diagnostic tests, and inpatient or outpatient care. They play a vital role in public 
+                   health by treating conditions, preventing diseases, and promoting wellness.
+
+            </p>
+            <a href="{% url 'about'%}"><button class="bt-non" style="background-color: rgb(89, 215, 89);color: white; border-radius: 6%; border: none;padding: 14px;">Learn More..</button></a>
+    </div>
+   
+    <div class="doc"><img src="{% static '/images/doc.png' %}" alt=""></div>
+  </div>
+  <hr>
+  
+<div class="you" style="background-color:none;">
+  <h3 style="text-align: center; font-size: 30px; padding-top: 20px; color: rgb(6, 43, 34);
+   font-family: 'Times New Roman', Times, serif;">Know CITY<span>
+  Virtual Tour</span></h3>
+  <br>
+  <br>
+  <iframe width="860" height="415" src="https://www.youtube.com/embed/DpgnWvGfRCc?si=l14t9CKT7vnkKlO8" 
+  style="margin-left: 320px;margin-bottom: 70px;"></iframe>
+</div>
+
+
+<br><br>
+<br>
+
+
+
+<div class="last" style="position: relative;">
+  <h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 30px; color: gray;">City Hospital<hr></h3>
+
+  <h6 style="letter-spacing: 1.5PX; padding-left: 300PX; padding-top: 50PX; font-family: 'Times New Roman', Times, serif;">
+      QUICK LINKS
+  </h6><br>
+
+  <div style="padding-left: 310PX; color: gray; font-family: 'Times New Roman', Times, serif; text-decoration: none;">
+      <a style="text-decoration: none; color: gray;" href="{% url 'about'%}">
+          <p>> &nbsp;About</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'booking'%}">
+          <p>> &nbsp;Booking</p>.
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'doctors'%}">
+          <p>> &nbsp;Doctors</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'department'%}">
+          <p>> &nbsp;Departments</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'contact'%}">
+          <p>> &nbsp;Contact Us</p>
+      </a>
+  </div>
+
+</div>
+
+
+
+
+
+ <div class="mob" style="display: none;">
+  <h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 20px;">City Hospital<hr></h3>
+
+  <h6 style="font-family: 'Times New Roman', Times, serif;">
+      Quick Links..
+  </h6><br>
+
+  <div>
+      <a style="text-decoration: none; color: gray;" href="{% url 'about'%}">
+          <p>>&nbsp;About..</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'booking'%}">
+          <p>>&nbsp;Booking..</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'doctors'%}">
+          <p>> &nbsp;Doctors..</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'department'%}">
+          <p>> &nbsp;Departments..</p>
+      </a>
+      <a style="text-decoration: none; color: gray;" href="{% url 'contact'%}">
+          <p>> &nbsp;Contact Us..</p>
+      </a>
+</div>
+</div>
+
+<div style="text-align: center; padding-top: 40px;position: relative;top:-300px;left: 90px;">
+  <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(49, 49, 221); padding-bottom: 0px; letter-spacing: 2px;">Let Us Help You</p>
+  <h3 style="font-family:Georgia, 'Times New Roman', Times, serif ;">Have Queries Before The <br>
+ Appoinment?</h3>
+   
+ </div>
+ 
+ <br>
+ 
+ 
+ <div style="top: -300px;position: relative; left: 90px;">
+     <h5 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Ph:07034136933<br>cityhospital@gmail.com </h5>
+ </div>
+
+<style>
+   .make-appointment-btn {
+    padding-left: 50px;
+    background-color: rgb(6, 6, 73);
+    border-radius: 50%;
+    position: absolute;
+    top: 400px;
+    z-index: 1;
+    left: 285px;
+    padding-top: 15px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .make-appointment-btn:hover {
+    background-color: skyblue;
+    color: black;
+  }
+
+  .make-appointment-btn:focus {
+    background-color: rgb(6, 6, 73);
+    color: white;
+  }
+
+@media screen and (max-width: 450px) {
+
+/* Hides the first paragraph of .header-two */
+.header-two p:first-of-type {
+    display: none;
+}
+
+/* Hides the second paragraph of .header-two */
+.header-two p:nth-of-type(2) {
+    display: none;
+}
+
+/* Reduces font size and adjusts text alignment for h1 */
+.header-two h1 {
+    font-size: 16px;  /* Slightly larger font size for readability */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Adjusts the button in .appoi for smaller screens */
+.make-appointment-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    top: 250px;
+    left: 50%; /* Center button horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 30%; /* Even smaller border radius */
+}
+
+/* Emergency contact section adjustments */
+.emer {
+    position: relative;
+    top: 85%;
+    left: 30%;
+    transform: translateX(-50%);
+    padding: 10px;
+    padding-right: 50px;
+    width: 80%; /* Set width for smaller screens */
+    font-size: 14px; /* Adjust font size */
+}
+
+.emer img {
+    width: 20px; /* Reduce image size */
+}
+
+.emer p {
+    font-size: 14px; /* Reduce text size */
+    line-height: 1.4;
+}
+
+.emer strong {
+    font-size: 16px; /* Adjust strong text size */
+}
+
+/* Carousel image adjustments */
+.carousel-inner img {
+    height: 400px;
+}
+
+/* Animations and text adjustments */
+.ani h1 {
+    font-size: 7px; /* Further reduce font size for small screens */
+}
+
+.three p {
+    font-size: 13px;
+    display: none; /* Further reduce text size */
+}
+
+.bt-non {
+    padding: 10px; /* Make button more compact */
+    font-size: 12px; /* Reduce button text size */
+}
+
+/* Hide unnecessary span elements */
+span {
+    display: none;
+}
+
+/* Adjust doctor image size */
+.doc img {
+    height: 140px;
+    margin-top: 50px;
+}
+
+/* Adjust iframe for mobile view */
+.you iframe {
+    width: 200px;
+    height: 150px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    right: 270px;
+    bottom: 1px;
+}
+
+/* Adjust header for "you" section */
+.you h3 {
+    text-align: center;
+    margin-left: -190px;
+    position: relative;
+}
+
+/* Hide "about" section on small screens */
+.abou {
+    display: none;
+}
+
+/* Hide "last" section on small screens */
+.last {
+    display: none;
+}
+
+/* Display "mob" section on small screens */
+.mob {
+    display: block;
+
+
+}
+.mob h6{
+  padding-left: 17px;
+  padding-top: 10px;
+
+}
+.mob a{
+   position: relative;
+   left: 20px;
+   font-family:'Times New Roman', Times, serif;
+}
+.cont img{
+  display: block;
+  padding-left: 20px;
+  
+}
+.containerr{
+  display: none;
+}
+
+
+}
+
+</style>
+
+{% endblock %}

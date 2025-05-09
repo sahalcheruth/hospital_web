@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+
+{% block title%}
+home
+{% endblock %}
+
+{% block content%}
+
+{% load static %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="demo">
+      <p style="font-size: 14PX; letter-spacing: 2PX; color: gray;">TOTAL HEALTH CARE SOLUTION</p>
+      <h1 style="font-size: 60px; font-family: 'Times New Roman', Times, serif;"><strong>Y</strong>our Most Trusted <br>Health Partner</h1>
+      <p style="color: cadetblue;font-size: 10px;">A hospital is a place where doctors and nurses work tirelessly to save lives<br>
+         but it's the human connection that makes all the difference</p>
+      <br>
+      <a href="{% url 'booking'%}"><button class="btn" type="button" style="padding-left:50px;background-color: rgb(6, 6, 73);border-radius: 50%;
+      padding-top: 15px; padding-right: 45px;  padding-bottom: 25px;color: aliceblue; text-align: center;box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5);
+
+       border: none; font-size: 20px; font-weight:500 ; font-family:'Times New Roman', Times, serif;
+       cursor: pointer; 
+                 transition: background-color 0.3s;" 
+          onmouseover="this.style.backgroundColor='skyblue';this.style.color='black'" 
+          onmouseout="this.style.backgroundColor='rgb(6, 6, 73)';this.style.color='white'">MAKE  &nbsp; APPOINMENT &nbsp;></button></a>
+      </div>
+
+    <div style="background-color:white;position: absolute;top: 85%;left: 72%;
+        transform: translateX(-50%);z-index: 1;padding: 20px; padding-right: 140px;border-radius: 4%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        ">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5G_lXK5cROdWBjbkK6h3rghuHW1pcfFwDfg&s" width=
+         "25px"><p style="color: gray;font-family: 'Times New Roman', Times, serif;"><br>Emegency Cases<br>
+          <strong style="color: blue;">0703-413-6933</strong></p>
+      </div>
+
+
+
+
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static '/images/slider-bg-1.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static '/images/22.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/images/car3.jpg' %}" class="d-block w-100" alt="..." height="600px">
+        
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <div class="three">
+    <div class="elementor-widget-wrap elementor-element-populated">
+        <p style="font-weight: 400; color: blue;">@ City Hospital</p>
+        <div class="ani">
+        <h1 style="letter-spacing: .2px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(9, 86, 59);font-weight: 1000;">Best Medical And<br>
+        Health Care Center<br>
+        in Malappuram
+        </h1></div>
+        <p style="font-size: 12px; color: gray;">founded in 2025 with an aim to promote wellness and provide healthcare for<br>
+            all with the best kinds of services and is successfully achieving milstones<br> ever since</p>
+            <a href="{% url 'about'%}"><button class="bt-non" style="background-color: rgb(89, 215, 89);color: white; border-radius: 6%; border: none;padding: 14px;">Learn More..</button></a>
+    </div>
+   
+    <div class="doc"><img src="{% static '/images/doc.png' %}" alt=""></div>
+  </div>
+  <hr>
+  
+<div style="background-color:none;">
+  <h3 style="text-align: center; font-size: 30px; padding-top: 20px; color: rgb(6, 43, 34);
+   font-family: 'Times New Roman', Times, serif;">Know CITY<br>
+  Virtual Tour</h3>
+  <br>
+  <br>
+  <iframe width="860" height="415" src="https://www.youtube.com/embed/DpgnWvGfRCc?si=l14t9CKT7vnkKlO8" 
+  style="margin-left: 320px;margin-bottom: 70px;"></iframe>
+</div>
+
+
+<br><br>
+<br>
+
+
+
+
+<div>
+<h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 30px; color: gray;">City Hospital<hr></h3>
+
+<h6 style="letter-spacing: 1.5PX; padding-left: 300PX; padding-top: 50PX; font-family: 'Times New Roman', Times, serif;">QUICK LINKS</h6><br>
+<div style=" padding-left: 310PX;color: gray; font-family: 'Times New Roman', Times, serif; text-decoration: none;"><a style="text-decoration: none;color: gray;
+" href="{% url 'about'%}"><p>> &nbsp;About</p></a>
+<a style="text-decoration: none;color: gray;
+" href="{% url 'booking'%}"><p>> &nbsp;Booking</p></a>
+<a style="text-decoration: none;color: gray;
+" href="{% url 'doctors'%}"><p>> &nbsp;Doctors</p></a>
+<a style="text-decoration: none;color: gray;
+" href="{% url 'department'%}"><p>> &nbsp;Departments</p></a>
+<a style="text-decoration: none;color: gray;
+" href="{% url 'contact'%}"><p>> &nbsp;Contact Us</p></a>
+
+<div style="padding-left: 350px;margin-top: -255px;">
+  <h5 style="color: black; font-size: 16PX;">ABOUT US</h5>
+  <div style="padding-left: 10px; padding-right: 170px;">
+  <p>~ Mission & Vision: Highlight the hospital's commitment to providing high-quality, compassionate care and advancing healthcare in the community.</p>
+  <p>~ History: A brief history of the hospital, its founding, and milestones.</p>
+  <p>~ Emergency Care: 24/7 emergency department with a highly trained staff and state-of-the-art medical equipment.</p>
+  <p>~ Maternity & Women's Health: Expert obstetrics and gynecology services, prenatal care, and birthing options.</p>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="container" style="padding-bottom: 200px; padding-left: 600px; padding-top: 80px;" > 
+  <img src="https://seekvectors.com/files/download/a9c0d3e9f66ecc43eb9103202e2a1347.jpg" width="16px">
+  <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" width="20px">
+  <img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" width="23px">
+</div>
+
+
+
+{% endblock %}

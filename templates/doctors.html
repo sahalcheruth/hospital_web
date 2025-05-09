@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+
+{% block title%}
+
+doctors
+{% endblock %}
+
+{% block content%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+
+
+
+
+
+<div class="sid">
+  <ul>
+    <div id="sidebar" class="sidebar">
+    <li>
+      <a href="" class="close-btn" onclick="closeSidebar()">x</a>
+    </li>
+    
+    <li class="nav-item active">
+      <a class="nav-link text-white" href="{% url 'home'%}">Home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'about'%}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'booking'%}">Booking</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'doctors'%}">Doctors</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'department'%}">Departments</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'contact'%}">Contact Us</a>
+    </li>
+  
+    <button id="open-btn" onclick="openSidebar()"><i class="material-icons">&#xe5d2;</i></button>
+  </ul>
+</div>
+    </div>
+
+</div>
+
+<h1 class="text-center" style="font-family: 'Times New Roman', Times, serif; font-weight: 700;animation: fadeIn 2s ease-in-out">Our Doctors</h1>
+<hr>
+<div class="container text-center">
+{% for d in doctors%}
+
+
+<div class="card text-center mx-3 my-3 bg-light" style="width: 18rem; display: inline-block;">
+    <img src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Dr.{{d.doc_name}}</h5>
+      <p class="card-text">{{d.doc_spec}}</p>
+      <h6>{{d.dep_name}}</h6>
+      
+    </div>
+  </div>
+
+{%endfor%}
+</div>
+
+
+<div class="mob-qu">
+
+
+  <div class="moq">
+    <h4>
+      Quick Links
+    </h4>
+    
+
+    <ul>
+      <a href="{% url 'home'%}"><li>Home</li></a>
+      <a href="{%url 'booking'%}"><li>Booking</li></a>
+     
+      <a href="{% url 'department'%}"><li>Departments</li></a>
+      <a href="{%url 'doctors'%}"><li>Doctors</li></a>
+      <a href="{%url 'about'%}"><li>About</li></a>
+      <a href="{% url 'contact'%}"><li>Contact Us</li></a>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<div class="mob-copy">
+
+<div style="color: white; background-color: rgb(3, 3, 45);padding-top:10px; padding-bottom: 10px;">
+  <p style="text-align: center; color: #333;">Copyright@2025 City Hospital.All Rights Reserved</p>
+</div>
+</div>
+
+
+
+<div class="selo" style="padding-top: 200px;">
+  <h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 30px;">City Hospital<hr></h3>
+  
+  <h6 style="letter-spacing: 1.5PX; padding-left: 300PX; padding-top: 50PX; font-family: 'Times New Roman', Times, serif;">QUICK LINKS</h6>
+  <div style=" padding-left: 310PX;color: gray; font-family: 'Times New Roman', Times, serif; text-decoration: none;"><a style="text-decoration: none;color: gray;
+  " href="{% url 'about'%}"><p>> &nbsp;About</p></a>
+  <a style="text-decoration: none;color: gray;
+  " href="{% url 'booking'%}"><p>> &nbsp;Booking</p></a>
+  <a style="text-decoration: none;color: gray;
+  " href="{% url 'doctors'%}"><p>> &nbsp;Doctors</p></a>
+  <a style="text-decoration: none;color: gray;
+  " href="{% url 'department'%}"><p>> &nbsp;Departments</p></a>
+  <a style="text-decoration: none;color: gray;
+  " href="{% url 'contact'%}"><p>> &nbsp;Contact Us</p></a>
+
+<div style="padding-left: 350px;margin-top: -240px;">
+  <h5 style="color: black; font-size: 16PX;">ABOUT US</h5>
+  <div style="padding-left: 10px; padding-right: 170px;">
+  <p>~ Mission & Vision: Highlight the hospital's commitment to providing high-quality, compassionate care and advancing healthcare in the community.</p>
+  <p>~ History: A brief history of the hospital, its founding, and milestones.</p>
+  <p>~ Emergency Care: 24/7 emergency department with a highly trained staff and state-of-the-art medical equipment.</p>
+  <p>~ Maternity & Women's Health: Expert obstetrics and gynecology services, prenatal care, and birthing options.</p>
+</div>
+</div>
+  </div>
+  
+  
+  <div class="container" style="padding-bottom: 200px; padding-left: 600px; padding-top: 20px;" > 
+    <img src="https://seekvectors.com/files/download/a9c0d3e9f66ecc43eb9103202e2a1347.jpg" width="16px">
+    <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" width="20px">
+    <img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" width="23px">
+  </div>
+
+
+
+
+  
+  <script src="{% static 'js/scripts.js' %}"></script>
+ 
+
+
+  
+{% endblock %}

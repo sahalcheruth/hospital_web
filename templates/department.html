@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+
+department
+{% endblock %}
+
+{% block content%}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<h1 class="text-center" style="padding-top: 20px; font-weight: 800;
+font-family: 'Times New Roman', Times, serif;animation: fadeIn 2s ease-in-out">Our Department</h1>
+
+
+<hr>
+
+
+<div class="dec">
+
+
+  <div class="dec-1">
+    <h3><i style="font-size:24px;color: rgb(23, 10, 111);" class="fa">&#xf0f0;</i>
+      Cardiology</h3>
+    <p style="color: gray;">Cardiology is the branch of medicine that focuses on
+       diagnosing, treating, and preventing heart and blood 
+       vessel diseases. It involves a wide range of conditions, 
+       including coronary artery disease, heart failure, arrhythmias (irregular heartbeats),
+       valvular heart diseases, and congenital heart defects, among others.</p>
+  </div>
+
+  
+  <div class="dec-1">
+    <h3><i style="font-size:24px;color: rgb(23, 10, 111);" class="fa">&#xf0f0;</i>
+      Neurology</h3>
+    <p style="color: gray;">Neurology is the branch of medicine that
+       focuses on the diagnosis, treatment, and management of disorders related
+        to the nervous system, including the brain, spinal cord, nerves, and muscles. Neurologists
+       are the specialists who deal with a wide range of neurological conditions.</p>
+  </div>
+  
+  
+  
+  <div class="dec-1">
+    <h3><i style="font-size:24px;color: rgb(23, 10, 111);" class="fa">&#xf0f0;</i>
+      Urology</h3>
+    <p style="color: gray;">Urology is the branch of medicine that focuses
+       on the diagnosis, treatment, and management of disorders related to the urinary 
+       system (kidneys, bladder, ureters, and urethra) and the male reproductive system 
+       (penis, testes, prostate, and associated structures).
+       Urologists are the medical professionals who specialize in this field.</p>
+  </div>   
+
+  
+  
+  <div class="dec-1">
+    <h3><i style="font-size:24px;color: rgb(23, 10, 111);" class="fa">&#xf0f0;</i>
+      Psychology</h3>
+    <p style="color: gray;">Psychology is the scientific study of
+       the mind and behavior. It seeks to understand how people think, feel, 
+       and act, both individually and in groups. Psychologists examine mental processes, emotions, cognitive
+       functions, social interactions, and the biological factors that influence behavior.</p>
+  </div>   
+  
+
+
+
+  
+  </div>
+  
+
+
+  <div class="mob-qu">
+
+
+    <div class="moq">
+      <h4>
+        Quick Links
+      </h4>
+      
+  
+      <ul>
+        <a href="{% url 'home'%}"><li>Home</li></a>
+        <a href="{%url 'booking'%}"><li>Booking</li></a>
+       
+        <a href="{% url 'department'%}"><li>Departments</li></a>
+        <a href="{%url 'doctors'%}"><li>Doctors</li></a>
+        <a href="{%url 'about'%}"><li>About</li></a>
+        <a href="{% url 'contact'%}"><li>Contact Us</li></a>
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="mob-copy">
+  
+  <div style="color: white; background-color: rgb(3, 3, 45);padding-top:10px; padding-bottom: 10px;">
+    <p style="text-align: center; color: #333;">Copyright@2025 City Hospital.All Rights Reserved</p>
+  </div>
+  </div>
+
+
+
+      
+<div class="mob-dep" style="display: none;"><h3>Cardiolagy</h3>
+  <p>
+    Cardiology is the branch of medicine that focuses on the diagnosis,
+     treatment, and prevention of heart and blood vessel disorders.</p></div>
+
+
+{% for d in dept%}
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-5 border-warning rounded">
+    <h1>{{d.dep_name}}</h1>
+    <p>{{d.dep_decription}}</p>
+
+</div>
+
+{% endfor %}
+<br>
+
+<div class="selo" style="padding-top: 200px;">
+    <h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 30px;">City Hospital<hr></h3>
+    
+    <h6 style="letter-spacing: 1.5PX; padding-left: 300PX; padding-top: 50PX; font-family: 'Times New Roman', Times, serif;">QUICK LINKS</h6>
+    <div style=" padding-left: 310PX;color: gray; font-family: 'Times New Roman', Times, serif; text-decoration: none;"><a style="text-decoration: none;color: gray;
+    " href="{% url 'about'%}"><p>> &nbsp;About</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'booking'%}"><p>> &nbsp;Booking</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'doctors'%}"><p>> &nbsp;Doctors</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'department'%}"><p>> &nbsp;Departments</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'contact'%}"><p>> &nbsp;Contact Us</p></a>
+
+<div style="padding-left: 350px;margin-top: -240px;">
+  <h5 style="color: black; font-size: 16PX;">ABOUT US</h5>
+  <div style="padding-left: 10px; padding-right: 170px;">
+  <p>~ Mission & Vision: Highlight the hospital's commitment to providing high-quality, compassionate care and advancing healthcare in the community.</p>
+  <p>~ History: A brief history of the hospital, its founding, and milestones.</p>
+  <p>~ Emergency Care: 24/7 emergency department with a highly trained staff and state-of-the-art medical equipment.</p>
+  <p>~ Maternity & Women's Health: Expert obstetrics and gynecology services, prenatal care, and birthing options.</p>
+</div>
+</div>
+    </div>
+    
+    
+    <div class="container" style="padding-bottom: 200px; padding-left: 600px; padding-top: 20px;" > 
+      <img src="https://seekvectors.com/files/download/a9c0d3e9f66ecc43eb9103202e2a1347.jpg" width="16px">
+      <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" width="20px">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" width="23px">
+    </div>
+
+
+
+
+{% endblock %}

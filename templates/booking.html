@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title%}
+
+booking
+{% endblock %}
+
+{% load static %}
+
+
+<link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
+
+
+{% block content%}
+
+<div class="booking-mob">
+  <h1 class="text-center" style="padding-top: 2%;
+   color: rgb(0, 0, 0); text-shadow: 2px 2px 4px rgba(183, 120, 120, 0.5);font-weight: 800;text-shadow: 2px 2px 2px gray; animation: fadeIn 2s ease-in-out;
+   white-space: nowrap;padding-top: 20px; padding-left: 55px;margin-bottom: -40px;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 27px;">Make An Appoinment</h1>
+  <hr>
+  <div class="container w-50 text-center my-5 ">
+   
+  <div class="container" style="width: 300px; background-color: rgba(47, 42, 42, 0.94);box-shadow: 10px 10px 8px 8px rgba(0, 0, 0, 0.2);margin-left: 40px;color: azure;">    
+  <form action="" method="POST">
+      {% csrf_token %}
+      {{form |crispy }}
+  
+      <button type="submit" style="margin-bottom: 20px; background-color: rgb(30, 157, 85); color: rgb(250, 246, 246);
+      border-radius: 25%; border: none; transition: background-color 0.3s, transform 0.13s;" onmouseover=
+      "this.style.backgroundColor='rgb(44, 179, 92)'; this.style.transform='scale(1.05)';" onmouseout=
+      "this.style.backgroundColor='rgb(30, 157, 85)'; this.style.transform='scale(1)';">
+      REGISTER
+  </button>
+  
+  </form>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="mob-qu">
+
+
+    <div class="moq">
+      <h4>
+        Quick Links
+      </h4>
+      
+  
+      <ul>
+        <a href="{% url 'home'%}"><li>Home</li></a>
+        <a href="{%url 'booking'%}"><li>Booking</li></a>
+       
+        <a href="{% url 'department'%}"><li>Departments</li></a>
+        <a href="{%url 'doctors'%}"><li>Doctors</li></a>
+        <a href="{%url 'about'%}"><li>About</li></a>
+        <a href="{% url 'contact'%}"><li>Contact Us</li></a>
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="mob-copy">
+  
+  <div style="color: white; background-color: rgb(3, 3, 45);padding-top:10px; padding-bottom: 10px;">
+    <p style="text-align: center; color: #333;">Copyright@2025 City Hospital.All Rights Reserved</p>
+  </div>
+  </div>
+
+
+
+
+
+
+
+<div class="allbo">
+<h1 class="text-center" style="padding-top: 2%; color: rgb(6, 122, 85);
+ text-shadow: 2px 2px 4px rgba(183, 120, 120, 0.5);
+font-family: 'Times New Roman', Times, serif;">Make An Appoinment</h1>
+<hr>
+<div class="container w-50 text-center my-5 ">
+ 
+<div class="container" style="width: 400px; background-color: rgba(47, 42, 42, 0.94);box-shadow: 10px 10px 8px 8px rgba(0, 0, 0, 0.2);color: azure;">    
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form |crispy }}
+
+    <button type="submit" style="margin-bottom: 20px; background-color: rgb(30, 157, 85); color: rgb(250, 246, 246);
+    border-radius: 25%; border: none; transition: background-color 0.3s, transform 0.13s;" onmouseover=
+    "this.style.backgroundColor='rgb(44, 179, 92)'; this.style.transform='scale(1.05)';" onmouseout=
+    "this.style.backgroundColor='rgb(30, 157, 85)'; this.style.transform='scale(1)';">
+    REGISTER
+</button>
+
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="quick">
+    <h3 style="font-family: 'Times New Roman', Times, serif; padding-left: 30px;">City Hospital<hr></h3>
+    
+    <h6 style="letter-spacing: 1.5PX; padding-left: 300PX; padding-top: 50PX; font-family: 'Times New Roman', Times, serif;">QUICK LINKS</h6>
+    <div style=" padding-left: 310PX;color: gray; font-family: 'Times New Roman', Times, serif; text-decoration: none;"><a style="text-decoration: none;color: gray;
+    " href="{% url 'about'%}"><p>> &nbsp;About</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'booking'%}"><p>> &nbsp;Booking</p></a>
+    <a style="text-decoration: none;color: gray;
+
+
+
+    " href="{% url 'doctors'%}"><p>> &nbsp;Doctors</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'department'%}"><p>> &nbsp;Departments</p></a>
+    <a style="text-decoration: none;color: gray;
+    " href="{% url 'contact'%}"><p>> &nbsp;Contact Us</p></a>
+
+<div style="padding-left: 350px;margin-top: -240px;">
+  <h5 style="color: black; font-size: 16PX;">ABOUT US</h5>
+  <div style="padding-left: 10px; padding-right: 170px;">
+  <p>~ Mission & Vision: Highlight the hospital's commitment to providing high-quality, compassionate care and advancing healthcare in the community.</p>
+  <p>~ History: A brief history of the hospital, its founding, and milestones.</p>
+  <p>~ Emergency Care: 24/7 emergency department with a highly trained staff and state-of-the-art medical equipment.</p>
+  <p>~ Maternity & Women's Health: Expert obstetrics and gynecology services, prenatal care, and birthing options.</p>
+</div>
+</div>
+    </div>
+    
+    
+    <div class="container" style="padding-bottom: 200px; padding-left: 600px; padding-top: 20px;" > 
+      <img src="https://seekvectors.com/files/download/a9c0d3e9f66ecc43eb9103202e2a1347.jpg" width="16px">
+      <img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" width="20px">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" width="23px">
+    
+    </div>
+    
+    
+{% endblock %}

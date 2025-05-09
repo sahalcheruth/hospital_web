@@ -1,0 +1,547 @@
+
+
+.three{
+    padding: 10%;
+    display: flex;
+}
+
+@keyframes shake{
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-3px);}
+    50% {transform: translateX(3px);}
+    75% {transform: translateX(-3px);}
+    100% {transform: translateX(0);}
+}
+
+.doc img{
+    height: 400px;
+    animation: shake 0.5s ease-in-out infinite;
+
+}
+
+.ani{
+    position: relative;
+    animation: mymove forwards;
+    transition-delay: 12s;
+    transition-duration: 4s;
+    transition: ease-in;
+    
+   
+}
+@keyframes mymove {
+    from {right: 150px;}
+    to {left: 0px;color: rgba(0, 0, 0, 0.921);text-shadow: 0px 0px 2px rgba(73, 131, 23, 3);font-family:Georgia, 'Times New Roman', Times, serif ;}
+
+    
+    
+}   
+.bot{
+    background-color: #333;
+    padding: 50px;
+    padding-left: 500px;
+    
+} 
+.bt-non{
+
+    position: relative;
+    animation: mymove-o 2s forwards;
+    transition-delay: 2s;
+    transition-duration: 4s;
+    
+}
+@keyframes mymove-o {
+    from {left: 150px;}
+    to {right: 0px;color: rgb(5, 87, 40);text-shadow: 3px 3px 5px rgba(73, 131, 23, 3);font-family:Georgia, 'Times New Roman', Times, serif ;}
+
+    
+    
+}  
+
+.nav-link{
+    color: blue;
+    display: inline-block;
+    font-size: 16px;
+    transition: transform .1s ease-in;
+    transition-duration: .2s;
+    font-family:monospace;
+   
+    
+}
+
+.nav-link:hover {
+    transform: translateY(-15px) !important;
+}
+.navbar{
+    background-color: rgb(5, 3, 74);
+   
+}
+.fixed-bottom{
+    background-color: rgba(9, 26, 158, 0.542);
+}
+.mobem{
+    display: none;
+}
+.header-two{
+  position: absolute;
+  top: 23%;
+  left: 32%;
+  transform: translateX(-50%);
+  font-size: 44%;
+  font-weight: bold;
+  color: rgb(2, 12, 52); /* Text color */
+  
+  padding: 10px;
+  z-index: 1;
+}
+
+.booking-mob{
+    display: none;
+    
+    margin-right: 800px;
+}
+
+.mob-abo{
+    display: none;
+}
+.bott{
+    background-color: rgb(209, 190, 190);
+    text-align: center;
+    color:white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+
+}
+.col{
+    padding-left: 20px;
+}
+.appoi{
+    position: absolute;
+    background-color: #106634;
+    top: 390px;
+    left: 405px;
+    z-index: 1;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 1px 2px 4px black;
+    border-radius: 2px;
+    animation-name: mov ;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+
+}
+.mob-copy{
+    display: none;
+}
+.mob-qu{
+    display: none;
+}
+.dec{
+    display: none;
+}
+.appoi:hover{
+    background-color: rgb(216, 164, 74);
+    box-shadow: 0px 2px 2px rgb(220, 195, 195);
+    border-radius: 2px;
+
+
+}
+.newq{
+    padding-left: 280px;
+    padding-bottom: 100px;
+    
+}
+
+.newq h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.newq a{
+    text-decoration: none;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.sid{
+    display: none;
+}
+.mobile-thumb{
+    display: none;
+}
+.subhead{
+    display: none;
+}
+.image-container{
+    display: none;
+}
+.container-5{
+    padding-left: 200px;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.header-two {
+    animation: fadeIn 2s ease-in-out;
+  }
+.make{
+    display: none;
+}  
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}  
+@keyframes mov{
+    0%{
+        left:0px;
+    }
+    98%{
+        text-shadow: #333;
+
+
+
+    }
+    100%{
+        left: 295px;
+        
+    }
+}
+@media(max-width: 490px) {
+    .sid {
+        display: block;
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 100px;
+        right: 80px;
+        background-color: #135b4f;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        z-index: 1000;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 2px 4px 5px black;
+        margin-top: 70px;
+        border-radius: 4px;
+        
+
+    }
+    .text-white{
+        padding-left: 0px;
+    }
+
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        list-style-type: none;
+    }
+
+    .sidebar a:hover {
+        background-color: #575757;
+        list-style-type: none;
+    }
+    .co{
+        display: none;
+    }
+    .mob-copy{
+        display: block;
+        padding: 0px;
+        
+
+    }
+    .dec{
+        display: block;
+        padding: 50px;
+    }
+    .dec-1{
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #9d034b;
+        justify-content: left;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        box-shadow: 2px 6px 8px gray;
+        animation-name: dec;
+        animation-duration: .9s;
+        animation-timing-function: ease-in;
+        position: relative; 
+        
+        text-align: left;
+        animation-direction: reverse; 
+        
+
+
+    
+    }
+    @keyframes dec{
+        0%{
+            left:0px;
+        }
+        98%{
+            text-shadow: #333;
+    
+    
+    
+        }
+        100%{
+            left: 295px;
+            
+        }
+    }
+
+
+    .dec-1 h3{
+        font-family:'Times New Roman', Times, serif;
+        color:black;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        animation: fadeIn 2s ease-in-out;
+        font-weight:800 ;
+    }
+    .dec-1 p{
+        animation: fadeIn 2s ease-in-out;
+    }
+    .mob-qu{
+        display: block;
+        background-color: #135b4f;
+        padding-bottom: 20px;
+    }
+    .moq h4{
+        padding-left: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-top: 20px;
+    }
+    .moq a{
+        text-decoration: none;
+        color: gray;
+        padding-left: 20px;
+        padding-top: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .newq{
+        display: none;
+    }
+    
+
+    .close-btn {
+        position: absolute;
+        top: 4px;
+        right: 110px;
+        font-size: 24px;
+        color: rgb(13, 233, 9);
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+    }
+    .allbo{
+        display: none;
+    }
+    .container-5{
+        display: none;
+    }
+    .quick{
+        display: none;
+    }
+    .mx-auto{
+        display: none;
+    }
+    #open-btn {
+        font-size: 20px;
+        cursor: pointer;
+        color:white;
+        background-color: rgb(5, 3, 74);
+        border: none;
+        position: fixed;
+        top: 30px;
+        left: 340px;
+        padding: 0;
+        z-index: 19999;
+        border-radius: 6px;
+
+
+    }
+    .booking-mob{
+        display: block;
+    }
+    #open-btn:active{
+        background-color: #575757;
+        
+    }   
+    
+    .mobile-thumb{
+        display: block;
+        width: 200px;
+        height: 200px;
+    }
+    ul {
+        list-style-type: none;
+                 
+    }
+    .image-thum{
+        position: relative;
+        left: 180px;
+        bottom: 70px;
+       
+        
+    }
+    .foot{
+        display: none;
+    }
+    .subhead{
+        display: block;
+        position: absolute;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight:bold;
+        color: #03210f;
+        top: 180px;
+        animation: fadeIn 2s ease-in-out
+        
+        
+    }
+    .selo{
+        display: none;
+    }
+    .make{
+        display: block;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #07c46c;
+        position: relative;
+        top: -120px;
+        right: 50px;
+        left: 40px;
+        margin-left: 130px;
+        margin-right: 130px;
+        text-align: center;
+        border-radius: 8px;
+        animation-name: mot;
+        animation-duration: .55s;
+        animation-timing-function: ease-in;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+        box-shadow: 2px 2px 4px gray;
+    }
+    .subhead h2{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight:bold;
+        color: #03210f;
+    }
+    .image-container{
+        display: block;
+        width: 100%;
+
+       
+    }
+    .image-container img{
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 355px;
+        opacity: .5;
+    }
+    .mobem{
+        background-color: #09b109;
+        color: aliceblue;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 4px;
+        display: block;
+    }
+    .abo{
+        display: none;
+    }
+    .abo-1{
+        display: none;
+    }
+    .botto{
+        display: none;
+    }
+    .mob-abo{
+        display: block;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .mob-abo h1{
+        padding-left: 20px;
+        padding-top: 15px;
+        color: #06294c;
+        font-weight: 700;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .mob-abo p{
+        padding-left: 20px;
+        padding-top: 20px;
+        color:gray;
+
+
+    }
+    @keyframes shake{
+        0% {transform: translateX(0);}
+        25% {transform: translateX(-3px);}
+        50% {transform: translateX(3px);}
+        75% {transform: translateX(-3px);}
+        100% {transform: translateX(0);}
+    }
+    
+    .mobile-thumb img{
+        
+        animation: shake 0.5s ease-in-out infinite;
+    
+    }
+   
+    
+
+
+    
+    .make p{
+        color: aliceblue;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        
+    }
+    .make a{
+        text-decoration: none;
+    }
+}
+    @keyframes mot{
+        0%{
+            left:0px;
+        }
+        98%{
+            text-shadow: #333;
+    
+    
+    
+        }
+        100%{
+            left: 185px;
+            
+        }
+        
+    
+    
+}       
